@@ -16,7 +16,16 @@
 # [!] Programmai jaglabā izdevumu stāvokli kad programma ir izslēgta palaista no jauna
 #
 
-expenses = []
+import json
+
+expenses_file = open('expenses.json')
+expenses = json.load(expenses_file) 
+expenses_file.close() 
+
+def sort_Summa(expense):
+    return expense["Summa"]
+        
+# expenses = []
 
 # load expenses from expenses.json file here
 # https://www.geeksforgeeks.org/read-write-and-parse-json-using-python/ (Python read JSON file)
@@ -25,6 +34,19 @@ pass
 while True:
     command = input("\nChoose command:")
     if command == "1":
+        print(expenses)
+        pass
+    if command == "2":
+        expenses.sort(key=sort_Summa, reverse=False)
+        print(expenses[:10])
+        pass
+    if command == "3":
+        expenses.sort(key=sort_Summa, reverse=True)
+        print(expenses[:10])
+        pass
+    if command == "4":
+        average_sum = (sum(expenses))/(len(expenses))
+        print(average_sum)
         pass
     if command == "e":
         print("Exiting...")

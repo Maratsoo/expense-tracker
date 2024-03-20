@@ -1,1 +1,42 @@
-[]
+[
+    {
+        "pirkums":"Produkts",
+        "Summa": 100
+    },
+    {
+        "pirkums":"Benzins",
+        "Summa": 110
+    },    
+    {
+        "pirkums":"Jauna drēbes",
+        "Summa": 50
+    },    
+    {
+        "pirkums":"jauna dator-pele",
+        "Summa": 25
+    },    
+    {
+        "pirkums":"Pizza",
+        "Summa": 15
+    },    
+    {
+        "pirkums":"Telefonu remonts",
+        "Summa": 30
+    },    
+    {
+        "pirkums":"Jaunu spele",
+        "Summa": 45
+    },    
+    {
+        "pirkums":"Nodokļi",
+        "Summa": 210
+    },    
+    {
+        "pirkums":"Jaunu tastatūra",
+        "Summa": 35
+    },    
+    {
+        "pirkums":"Citi",
+        "Summa":200
+    }
+]
